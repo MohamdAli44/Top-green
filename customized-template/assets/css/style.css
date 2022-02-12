@@ -106,7 +106,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #428bca;
+  background: var(--green-600);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -118,7 +118,7 @@ h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #629fd3;
+  background: var(--green-300);
   color: #fff;
 }
 .back-to-top.active {
@@ -545,7 +545,7 @@ section {
   padding: 8px 20px;
   margin: 0;
   background: #f5f9fc;
-  color: #428bca;
+  color: var(--green-600);
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -556,7 +556,7 @@ section {
   font-weight: 700;
 }
 .section-title h3 span {
-  color: #428bca;
+  color: var(--green-600);
 }
 .section-title p {
   margin: 15px auto 0 auto;
@@ -588,17 +588,17 @@ section {
   justify-content: center;
   width: 64px;
   height: 64px;
-  border: 2px solid #b9d4ec;
+  border: 2px solid var(--green-400);
   border-radius: 50px;
   transition: 0.5s;
 }
 .about .icon-box .icon i {
-  color: #428bca;
+  color: var(--green-600);
   font-size: 32px;
 }
 .about .icon-box:hover .icon {
-  background: #428bca;
-  border-color: #428bca;
+  background: var(--green-600);
+  border-color: var(--green-600);
 }
 .about .icon-box:hover .icon i {
   color: #fff;
@@ -614,7 +614,7 @@ section {
   transition: 0.3s;
 }
 .about .icon-box .title a:hover {
-  color: #428bca;
+  color: var(--green-600);
 }
 .about .icon-box .description {
   margin-left: 85px;
@@ -630,7 +630,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+  background: radial-gradient(var(--green-600) 50%, rgba(66, 139, 202, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -675,7 +675,7 @@ section {
   background: rgba(198, 16, 0, 0);
 }
 .about .play-btn:hover::after {
-  border-left: 15px solid #428bca;
+  border-left: 15px solid var(--green-600);
   transform: scale(20);
 }
 .about .play-btn:hover::before {
@@ -726,7 +726,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #428bca;
+  color: var(--green-600);
   font-weight: 700;
 }
 .counts .counters p {
@@ -769,7 +769,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #428bca;
+  background-color: var(--green-600);
 }
 
 /*--------------------------------------------------------------
@@ -785,7 +785,7 @@ section {
   float: left;
 }
 .services .icon i {
-  color: #428bca;
+  color: var(--green-600);
   font-size: 36px;
   line-height: 1;
 }
@@ -800,7 +800,7 @@ section {
   transition: 0.3s;
 }
 .services .icon-box:hover .title a {
-  color: #428bca;
+  color: var(--green-600);
 }
 .services .description {
   margin-left: 60px;
@@ -871,7 +871,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #428bca;
+  background: var(--green-600);
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -971,13 +971,13 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #428bca;
+  border: 1px solid var(--green-600);
 }
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #428bca;
+  background-color: var(--green-600);
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -1065,7 +1065,7 @@ section {
   display: inline-block;
 }
 .certificates .member .social a:hover {
-  color: #428bca;
+  color: var(--green-600);
 }
 .certificates .member .social i {
   font-size: 18px;
@@ -1101,7 +1101,7 @@ section {
 }
 .contact .info i {
   font-size: 48px;
-  color: #92bce0;
+  color: var(--green-300);
   margin-bottom: 15px;
 }
 .contact .info h4 {
@@ -1170,7 +1170,7 @@ section {
 }
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #428bca;
+  border-color: var(--green-600);
 }
 .contact .php-email-form input {
   padding: 10px 15px;
@@ -1180,15 +1180,15 @@ section {
 }
 .contact .php-email-form button[type="submit"] {
   background: #fff;
-  border: 2px solid #428bca;
+  border: 2px solid var(--green-600);
   padding: 12px 35px;
   transition: 0.4s;
-  background: #428bca;
+  background: var(--green-600);
   color: #fff;
   border-radius: 4px;
 }
 .contact .php-email-form button[type="submit"]:hover {
-  background: #5697d0;
+  background: var(--green-500);
 }
 @media (max-width: 1024px) {
   .contact .php-email-form {
@@ -1295,7 +1295,7 @@ section {
   font-size: 16px;
   padding: 0 20px 0 20px;
   margin: 3px;
-  background: #428bca;
+  background: var(--green-600);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1341,7 +1341,7 @@ section {
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #428bca;
+  background: var(--green-600);
   color: #fff;
   text-decoration: none;
 }
@@ -1363,7 +1363,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5697d0;
+  color: var(--green-500);
   font-size: 18px;
   line-height: 1;
 }
@@ -1382,7 +1382,7 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  color: #5697d0;
+  color: var(--green-500);
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
