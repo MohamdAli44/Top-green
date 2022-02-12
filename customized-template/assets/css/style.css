@@ -15,6 +15,13 @@
   --dark-text: #000000;
   --light-text: #fefefe;
   --white-bg: #fff;
+  --color-black-rgb: 0, 0, 0;
+
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+
+  --color-primary: #38b000;
+  --color-default: #1a1f24;
 }
 
 /*--------------------------------------------------------------
@@ -778,37 +785,132 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services {
-  padding-bottom: 30px;
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
 }
-.services .icon-box {
-  margin-bottom: 60px;
-}
-.services .icon {
-  float: left;
-}
-.services .icon i {
-  color: var(--green-600);
+.services .service-box .icon {
   font-size: 36px;
-  line-height: 1;
-}
-.services .title {
-  margin-left: 60px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-.services .title a {
-  color: #343a40;
+  padding: 20px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
   transition: 0.3s;
 }
-.services .icon-box:hover .title a {
-  color: var(--green-600);
+
+.services .service-box .icon img {
+  width: 200px;
+  border-radius: 6px;
 }
-.services .description {
-  margin-left: 60px;
-  line-height: 24px;
-  font-size: 14px;
+
+.services .service-box h3 {
+  color: #444444;
+  font-weight: 700;
+}
+.services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+.services .service-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.services .service-box.green-herbs {
+  border-bottom: 3px solid #004b23;
+}
+.services .service-box.green-herbs .icon {
+  color: #004b23;
+  background: #d8f3db;
+}
+.services .service-box.green-herbs .read-more {
+  color: #0c6435;
+}
+.services .service-box.green-herbs:hover {
+  background: #045a2c;
+}
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+}
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+.services .service-box.orange:hover {
+  background: #f68c09;
+}
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+.services .service-box.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+.services .service-box.green:hover {
+  background: #08da4e;
+}
+.services .service-box.red-spices {
+  border-bottom: 3px solid #e94a22;
+}
+.services .service-box.red-spices .icon {
+  color: #e94a22;
+  background: #f3e8e5;
+}
+.services .service-box.red-spices .read-more {
+  color: #e94a22;
+}
+.services .service-box.red-spices:hover {
+  background: #e94a22;
+}
+.services .service-box.yellow-seeds {
+  border-bottom: 3px solid #ccbd36;
+}
+.services .service-box.yellow-seeds .icon {
+  color: #ccbd36;
+  background: #f8f5dd;
+}
+.services .service-box.yellow-seeds .read-more {
+  color: #ccbd36;
+}
+.services .service-box.yellow-seeds:hover {
+  background: #ccbd36;
+}
+.services .service-box.yellow-oils {
+  border-bottom: 3px solid #a0b943;
+}
+.services .service-box.yellow-oils .icon {
+  color: #a0b943;
+  background: #f1f7db;
+}
+.services .service-box.yellow-oils .read-more {
+  color: #a0b943;
+}
+.services .service-box.yellow-oils:hover {
+  background: #a0b943;
+}
+.services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
+  color: #fff;
+}
+.services .service-box:hover .icon {
+  background: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -844,173 +946,6 @@ section {
 }
 .cta .cta-btn:hover {
   background: #0e8017;
-}
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 3px;
-}
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background: var(--green-600);
-}
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(57, 64, 71, 0.6);
-}
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(57, 64, 71, 0.6);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
-}
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-}
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 5px 0 0;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #6aa3d5;
-}
-.portfolio .portfolio-wrap:hover::before {
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
-}
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid var(--green-600);
-}
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
-  background-color: var(--green-600);
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(57, 64, 71, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-description p {
-  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1226,9 +1161,16 @@ section {
 .breadcrumbs {
   padding: 15px 0;
   background: #f7f8f8;
-  min-height: 40px;
-  margin-top: 70px;
+  min-height: 120px;
+  margin-top: 65px;
 }
+
+.herbs-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.377)),
+    url(../img/slide/slide-1.jpg);
+  background-size: cover;
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 58px;
@@ -1237,6 +1179,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 600;
+  color: var(--light-text);
 }
 .breadcrumbs ol {
   display: flex;
@@ -1248,11 +1191,12 @@ section {
 }
 .breadcrumbs ol li + li {
   padding-left: 10px;
+  color: var(--light-text);
 }
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #505a63;
+  color: var(--light-text);
   content: "/";
 }
 
@@ -1402,4 +1346,57 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/* products page */
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.product-items .img {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
+}
+.product-items .img img {
+  transition: 0.6s;
+  height: 300px;
+  width: 100%;
+}
+.product-items .details {
+  padding: 30px 30px;
+  margin: -70px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  background: var(--color-white);
+  position: relative;
+  background: rgba(var(--color-white-rgb), 0.9);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
+}
+
+.product-items .details h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+.product-items .details p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.product-items .product-item:hover .details h3 {
+  color: var(--color-primary);
+}
+.product-items .product-item:hover .details .icon {
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+.product-items .product-item:hover .details .icon i {
+  color: var(--color-primary);
+}
+.product-items .product-item:hover .img img {
+  transform: scale(1.2);
 }
