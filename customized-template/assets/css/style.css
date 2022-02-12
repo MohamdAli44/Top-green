@@ -166,7 +166,7 @@ h6 {
 -------------------------------------------------------------*/
 .contact-info-bar-container {
   background-color: #25b83d;
-  background: url("/assets/img/pattern.svg");
+  background: url("../img/pattern.svg");
 }
 
 .contact-info-item {
@@ -630,7 +630,10 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--green-600) 50%, rgba(66, 139, 202, 0.4) 52%);
+  background: radial-gradient(
+    var(--green-600) 50%,
+    rgba(66, 139, 202, 0.4) 52%
+  );
   border-radius: 50%;
   display: block;
   position: absolute;
