@@ -958,7 +958,21 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+  min-height: 100%;
 }
+
+@media only screen and (max-width: 500px) {
+  .certificates .member {
+    min-height: initial;
+  }
+}
+
+.certificates .member img {
+  min-height: 100% !important;
+  min-width: 100%;
+  object-fit: cover;
+}
+
 .certificates .member .member-info {
   opacity: 0;
   position: absolute;
