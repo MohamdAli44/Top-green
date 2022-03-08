@@ -449,6 +449,13 @@ h6 {
   margin: 0 auto 30px auto;
   color: #fff;
 }
+
+@media (max-width: 500px) {
+  #hero p {
+    font-size: 18px;
+  }
+}
+
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
   background-position: center top;
