@@ -958,7 +958,7 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 
 @media only screen and (max-width: 500px) {
