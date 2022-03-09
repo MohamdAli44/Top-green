@@ -920,6 +920,20 @@ section {
 .services .service-box.yellow-oils:hover {
   background: #a0b943;
 }
+.services .service-box.yellow-honey {
+  border-bottom: 3px solid #e49e1d;
+}
+.services .service-box.yellow-honey .icon {
+  color: #e49e1d;
+  background: #fde3c4;
+}
+.services .service-box.yellow-honey .read-more {
+  color: #e49e1d;
+}
+.services .service-box.yellow-honey:hover {
+  background: #e49e1d;
+}
+
 .services .service-box:hover h3,
 .services .service-box:hover p,
 .services .service-box:hover h3 small,
@@ -1232,6 +1246,12 @@ section {
 .oils-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.377)),
     url(../img/oils.jpg);
+  background-size: cover;
+}
+
+.honey-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.377)),
+    url(../img/honey.jpg);
   background-size: cover;
 }
 
