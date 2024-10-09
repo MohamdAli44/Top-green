@@ -634,6 +634,7 @@ section {
   margin-left: 85px;
   line-height: 24px;
   font-size: 14px;
+  font-weight: 600;
 }
 .about .video-box {
   background: url("../img/about.png") center center no-repeat;
